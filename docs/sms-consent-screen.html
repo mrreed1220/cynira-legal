@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cynira — SMS Consent Screen</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Helvetica, Arial, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1.5rem; color: #1a1a1a; line-height: 1.6; }
+  h1 { font-size: 1.3rem; }
+  .note { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+  .phone { max-width: 360px; margin: 0 auto; border: 1px solid #D9C9F5; border-radius: 20px; padding: 24px; background: #F7F2FB; }
+  .badge { width: 48px; height: 48px; border-radius: 24px; background: #EDE4FB; margin: 0 auto 16px; }
+  .title { font-size: 19px; font-weight: bold; text-align: center; color: #1F1B2E; margin-bottom: 8px; }
+  .desc { font-size: 13px; color: #7A7290; text-align: center; line-height: 19px; margin-bottom: 20px; padding: 0 4px; }
+  .option { background: #fff; border-radius: 10px; padding: 12px; margin-bottom: 10px; border: 1.5px solid #D9C9F5; display: flex; align-items: flex-start; gap: 10px; }
+  .radio { width: 16px; height: 16px; border-radius: 8px; border: 1.5px solid #6D28D9; margin-top: 2px; flex-shrink: 0; }
+  .radio.selected { background: radial-gradient(#6D28D9 5px, transparent 6px); }
+  .opt-title { font-size: 14px; font-weight: 600; color: #1F1B2E; }
+  .opt-sub { font-size: 12px; color: #7A7290; margin-top: 2px; }
+  .disclosure { font-size: 10px; color: #7A7290; line-height: 15px; margin: 10px 0 16px; }
+  .btn { background: #6D28D9; color: #fff; text-align: center; padding: 13px; border-radius: 10px; font-weight: bold; font-size: 14px; }
+</style>
+</head>
+<body>
+<h1>Cynira mobile app — SMS consent screen</h1>
+<p class="note">This page is a faithful reproduction of the in-app opt-in screen shown to every user during account onboarding (source: <code>src/screens/ConsentScreen.tsx</code>), hosted here for A2P 10DLC campaign review since the native mobile app itself is not otherwise publicly browsable. Full source: <a href="terms.html">Terms of Use</a> / <a href="privacy.html">Privacy Notice</a>.</p>
+
+<div class="phone">
+  <div class="badge"></div>
+  <div class="title">Text Check-Ins</div>
+  <div class="desc">With your permission, Cynira can text you between sessions to check in. These messages are optional, never a substitute for emergency care, and you can stop them anytime by replying STOP.</div>
+
+  <div class="option">
+    <div class="radio selected"></div>
+    <div>
+      <div class="opt-title">Yes, text me check-ins</div>
+      <div class="opt-sub">You choose the frequency on the next screen</div>
+    </div>
+  </div>
+  <div class="option">
+    <div class="radio"></div>
+    <div>
+      <div class="opt-title">Not right now</div>
+      <div class="opt-sub">You can turn this on later in settings</div>
+    </div>
+  </div>
+
+  <div class="disclosure">By continuing, you agree to receive automated text messages from Cynira. Message and data rates may apply. Message frequency varies. Reply STOP to opt out at any time, or START to opt back in.</div>
+
+  <div class="btn">Continue</div>
+</div>
+
+<p class="note" style="margin-top:2rem">Operated by Jason Reed, doing business as Cynira. Contact: <a href="mailto:cynirasupport@gmail.com">cynirasupport@gmail.com</a>.</p>
+</body>
+</html>
