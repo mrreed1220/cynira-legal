@@ -23,13 +23,30 @@
 </head>
 <body>
 <h1>Cynira mobile app — SMS consent screen</h1>
-<p class="note">This page is a faithful reproduction of the in-app opt-in screen shown to every user during account onboarding (source: <code>src/screens/ConsentScreen.tsx</code>), hosted here for A2P 10DLC campaign review since the native mobile app itself is not otherwise publicly browsable. Full source: <a href="terms.html">Terms of Use</a> / <a href="privacy.html">Privacy Notice</a>.</p>
+<p class="note">This page is a faithful reproduction of the in-app opt-in screen shown to every user during account onboarding (source: <code>src/screens/ConsentScreen.tsx</code>), hosted here for A2P 10DLC campaign review since the native mobile app itself is not otherwise publicly browsable. Full source: <a href="https://cynirahealth.com/terms.html">Terms of Use</a> (see "Text Messaging (SMS) Program") / <a href="https://cynirahealth.com/privacy.html">Privacy Notice</a>.</p>
+
+<h2 style="font-size:1.05rem">How users opt in</h2>
+<ol class="note" style="color:#1a1a1a">
+  <li>The user creates a Cynira account in the Cynira mobile app (iOS/Android).</li>
+  <li>The user enters their mobile number and verifies it with a one-time code.</li>
+  <li>On the Text Check-Ins screen below, the user selects "Yes, text me check-ins" (nothing is pre-selected) and taps Continue. Choosing "Not right now" means no check-in texts are sent.</li>
+</ol>
+
+<!--SCREENSHOT-->
+
+<h2 style="font-size:1.05rem">Screen contents</h2>
 
 <div class="phone">
   <div class="badge"></div>
   <div class="title">Text Check-Ins</div>
   <div class="desc">With your permission, Cynira can text you between sessions to check in. These messages are optional, never a substitute for emergency care, and you can stop them anytime by replying STOP.</div>
 
+  <div class="option" style="background:#EDE4FB;border-color:#EDE4FB">
+    <div>
+      <div class="opt-sub" style="margin-top:0">Mobile number</div>
+      <div class="opt-title">(555) 123-4567 &nbsp;<span class="opt-sub">(the number the user just verified)</span></div>
+    </div>
+  </div>
   <div class="option">
     <div class="radio"></div>
     <div>
@@ -46,7 +63,7 @@
   </div>
   <div class="disclosure" style="margin-top:-4px">Neither option is pre-selected - continuing without an explicit choice is blocked.</div>
 
-  <div class="disclosure">By continuing, you agree to receive automated text messages from Cynira. Message and data rates may apply. Message frequency varies. Reply STOP to opt out at any time, START to opt back in, or HELP for help.</div>
+  <div class="disclosure">By selecting "Yes, text me check-ins" and tapping Continue, you agree to receive automated check-in and account text messages from Cynira, Inc. at the mobile number above. Consent is not a condition of using Cynira or of any purchase. Message frequency varies (up to your chosen check-in schedule). Message and data rates may apply. Reply STOP to opt out at any time, START to opt back in, or HELP for help. See our <a href="https://cynirahealth.com/terms.html">Terms of Use</a> and <a href="https://cynirahealth.com/privacy.html">Privacy Notice</a>.</div>
 
   <div class="btn">Continue</div>
 </div>
